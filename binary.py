@@ -114,7 +114,7 @@ print(f"{len(testing_input.strip())} vs the orginal length {len(testing_input)}"
 # We can use the ** to give squre power and the pow(<value>, <to the power of>)
 # we use the //1 operator to cast our value down the int() would also work and the math.floor() would do the same form import math
 # note the pow operator will return a float so this value is a float because of how types work particularly after division
-
+# TODO Fix this thing or change langauge it veries way to much
 def cout_time(func):
     @wraps(func)
     def run_func(*args,**kwargs):
@@ -270,4 +270,14 @@ A_sextillion =  1_000_000_000_000_000_000_000 # 1,000,000,000,000,000,000,000
 
 
 
-# Prime_generations() # DONT DO IT
+# Prime_generations() # DONT DO IT Crl + c to cancel
+
+
+#now as I was saying we can now 
+# carry on with binary stuff
+
+binary_values : List[Tuple[int]] = [(a,b) for a in range(2) for b in range(2)]
+more_values :List[Tuple[int]] = [(a,b,c,d) for a in range(2) for b in range(2) for c in range(2) for d in range(2)]
+truth_values :List[Tuple[int]] =[a^a^b^b^c^c^d == d for a in range(2) for b in range(2) for c in range(2) for d in range(2)]
+print(more_values)
+print(truth_values)
